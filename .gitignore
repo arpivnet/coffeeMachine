@@ -1,21 +1,19 @@
+# Compiled class files
+*.class
 
-In a Node.js project, it's a common practice to exclude the node_modules directory from version control by adding it to the .gitignore file. The node_modules directory contains all the third-party packages and dependencies that your project relies on, and it can be quite large. Including it in version control is unnecessary because npm or yarn can reinstall these dependencies based on the package.json file.
-
-Here's a basic example of what you might include in a .gitignore file for a Node.js project:
-
-gitignore
-Copy code
-# Node.js
-node_modules/
-
-# Logs
-logs
+# Log files
 *.log
 
-# Dependency directories
-jspm_packages/
-bower_components/
+# BlueJ files
+*.ctxt
 
-# Optional: OS-specific files
-.DS_Store
-Thumbs.db
+# IntelliJ IDEA files
+.idea/
+
+# Eclipse files
+.classpath
+.project
+.settings/
+
+# Maven build directory
+/target/
